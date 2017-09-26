@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.hamd.quanlymotcua">
+	<author>hamd</author>
+	<namespace>quanlymotcua</namespace>
+    <entity name="HoSoMotCua" local-service="true" table="mc_hosomotcua">
+        <column name="id" type="int" primary="true" id-type="increment" convert-null="true"></column>
+        <column name="TenDonVi" type="String" convert-null="true" accessor="false" db-name="ten_don_vi"></column>
+        <column name="DienThoai" type="String" db-name="dien_thoai"></column>
+        <column name="TenNguoiNop" type="String" db-name="ten_nguoi_nop"></column>
+        <column name="CMND" type="String" db-name="cmnd"></column>
+        <column name="DienThoaiNguoiNop" type="String" db-name="dien_thoai_nguoi_nop"></column>
+        <column db-name="dia_chi" name="DiaChi" type="String"></column>
+        <column name="LoaiHoSo" type="int" db-name="loai_ho_so"></column>
+        <column name="IDThuTuc" type="int" db-name="id_thu_tuc"></column>
+        <column name="NgayTiepNhan" type="Date" db-name="ngay_tiep_nhan"></column>
+        <column name="NgayTraKetQua" type="Date" db-name="ngay_tra_ket_qua"></column>
+        <column name="HinhThucNop" type="int" db-name="hinh_thuc_nop"></column>
+        <column name="MaHoSo" type="String" db-name="ma_ho_so"></column>
+        <column name="SoBoHoSo" type="int" db-name="so_bo_ho_so"></column>
+        <column name="TrangThai" type="int" db-name="trang_thai"></column>
+    </entity>
+</service-builder>

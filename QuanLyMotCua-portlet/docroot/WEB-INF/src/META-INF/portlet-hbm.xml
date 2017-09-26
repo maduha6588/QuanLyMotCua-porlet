@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.hamd.quanlymotcua.model.HoSoMotCua" />
+	<class name="com.hamd.quanlymotcua.model.impl.HoSoMotCuaImpl" table="mc_hosomotcua">
+		<cache usage="read-write" />
+		<id name="id" column="id_" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="TenDonVi" type="com.liferay.portal.dao.orm.hibernate.StringType" column="ten_don_vi" />
+		<property name="DienThoai" type="com.liferay.portal.dao.orm.hibernate.StringType" column="dien_thoai" />
+		<property name="TenNguoiNop" type="com.liferay.portal.dao.orm.hibernate.StringType" column="ten_nguoi_nop" />
+		<property name="CMND" type="com.liferay.portal.dao.orm.hibernate.StringType" column="cmnd" />
+		<property name="DienThoaiNguoiNop" type="com.liferay.portal.dao.orm.hibernate.StringType" column="dien_thoai_nguoi_nop" />
+		<property name="DiaChi" type="com.liferay.portal.dao.orm.hibernate.StringType" column="dia_chi" />
+		<property name="LoaiHoSo" type="com.liferay.portal.dao.orm.hibernate.IntegerType" column="loai_ho_so" />
+		<property name="IDThuTuc" type="com.liferay.portal.dao.orm.hibernate.IntegerType" column="id_thu_tuc" />
+		<property name="NgayTiepNhan" type="org.hibernate.type.TimestampType" column="ngay_tiep_nhan" />
+		<property name="NgayTraKetQua" type="org.hibernate.type.TimestampType" column="ngay_tra_ket_qua" />
+		<property name="HinhThucNop" type="com.liferay.portal.dao.orm.hibernate.IntegerType" column="hinh_thuc_nop" />
+		<property name="MaHoSo" type="com.liferay.portal.dao.orm.hibernate.StringType" column="ma_ho_so" />
+		<property name="SoBoHoSo" type="com.liferay.portal.dao.orm.hibernate.IntegerType" column="so_bo_ho_so" />
+		<property name="TrangThai" type="com.liferay.portal.dao.orm.hibernate.IntegerType" column="trang_thai" />
+	</class>
+</hibernate-mapping>

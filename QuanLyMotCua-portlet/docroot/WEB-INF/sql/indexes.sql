@@ -1,0 +1,1 @@
+create index IX_ECD15794 on quanlymotcua_Foo (field2);

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.hamd.quanlymotcua.model.HoSoMotCua">
+		<field name="id" type="int" />
+		<field name="TenDonVi" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="DienThoai" type="String" />
+		<field name="TenNguoiNop" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="CMND" type="String" />
+		<field name="DienThoaiNguoiNop" type="String" />
+		<field name="DiaChi" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="LoaiHoSo" type="int" />
+		<field name="IDThuTuc" type="int" />
+		<field name="NgayTiepNhan" type="Date" />
+		<field name="NgayTraKetQua" type="Date" />
+		<field name="HinhThucNop" type="int" />
+		<field name="MaHoSo" type="String" />
+		<field name="SoBoHoSo" type="int" />
+		<field name="TrangThai" type="int">
+			<hint name="default-value">0</hint>
+		</field>
+	</model>
+</model-hints>

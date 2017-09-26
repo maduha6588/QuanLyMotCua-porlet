@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.hamd.quanlymotcua.model.impl.HoSoMotCuaModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID_" />
+			</id>
+			<basic name="TenDonVi">
+				<column name="TEN_DON_VI" />
+			</basic>
+			<basic name="DienThoai">
+				<column name="DIEN_THOAI" />
+			</basic>
+			<basic name="TenNguoiNop">
+				<column name="TEN_NGUOI_NOP" />
+			</basic>
+			<basic name="CMND">
+				<column name="CMND" />
+			</basic>
+			<basic name="DienThoaiNguoiNop">
+				<column name="DIEN_THOAI_NGUOI_NOP" />
+			</basic>
+			<basic name="DiaChi">
+				<column name="DIA_CHI" />
+			</basic>
+			<basic name="LoaiHoSo">
+				<column name="LOAI_HO_SO" />
+			</basic>
+			<basic name="IDThuTuc">
+				<column name="ID_THU_TUC" />
+			</basic>
+			<basic name="NgayTiepNhan">
+				<column name="NGAY_TIEP_NHAN" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="NgayTraKetQua">
+				<column name="NGAY_TRA_KET_QUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="HinhThucNop">
+				<column name="HINH_THUC_NOP" />
+			</basic>
+			<basic name="MaHoSo">
+				<column name="MA_HO_SO" />
+			</basic>
+			<basic name="SoBoHoSo">
+				<column name="SO_BO_HO_SO" />
+			</basic>
+			<basic name="TrangThai">
+				<column name="TRANG_THAI" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.hamd.quanlymotcua.model.impl.HoSoMotCuaImpl" name="HoSoMotCua">
+		<table name="mc_hosomotcua" />
+		<attributes />
+	</entity>
+</entity-mappings>
